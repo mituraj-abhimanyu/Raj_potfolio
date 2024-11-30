@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="hire.css">
+    <title>Hire Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        form {
+            background: #fff;
+            padding-left: 40px;
+            padding-right: 70px;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+           
+            
+        }
+        button:hover {
+            background-color: #218838;
+           
+        }
+    </style>
+</head>
+<body>
+
+<h2 >Hire Form</h2>
+<form class="hr" action="/submit-hire-form" method="POST">
+    <label for="name">Full Name:</label>
+    <input class="mr" type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input class="mr" type="email" id="email" name="email" required>
+
+    <label for="phone">Phone Number:</label>
+    <input class="mr" type="tel" id="phone" name="phone" required>
+
+    <label for="position">Problum Lavel:</label>
+    <input class="mr" type="text" id="position" name="position" required>
+
+    <label for="message">Message:</label>
+    <textarea class="mr" id="message" name="message" rows="4" required></textarea>
+    <p><p class="p" >Note :- </p>* My Work Fee 10,000 $ / houer</p>
+    <button class="mp" type="reset">Cancel</button>
+    <button class="mp" type="submit">Submit</button>
+</form>
+
+</body>
+</html>
